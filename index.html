@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Interactive Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="quiz-container">
+      <h1>Tech Quiz Challenge</h1>
+      <div class="timer">Time: <span id="time">30</span>s</div>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div id="question-container"></div>
+      <button id="next-btn">Next Question</button>
+      <div id="score-container" class="hide">
+        <h2>Quiz Complete!</h2>
+        <p>Your score: <span id="score">0</span></p>
+        <p class="feedback" id="feedback"></p>
+        <button onclick="restartQuiz()">Try Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
